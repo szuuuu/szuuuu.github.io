@@ -2,13 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Astrowizja - Styczeń 2017</title>
+    <meta name="viewport" content="width=1024"/>
+    <title>Konkurs "Astrowizja" - Styczeń 2017</title>
     <link rel="stylesheet" href="style.css"/>
     <script type="text/javascript" src="dane.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <div id="lista"></div>
+    <div id="lista">
+    <div id="tytul"><a href="http://astropolis.pl/topic/57298-astrowizja-styczen-17-glosowanie-vox-populi/">Konkurs "Astrowizja" - Styczeń&nbsp;2017</a></div>
+    <div class="przyciski">
+    <input id="ukryj_niewybrane" type="checkbox" onchange="ukryjNiewybrane(event)"><label for="ukryj_niewybrane">Ukryj niewybrane</label>
+    </div>
+    <div id="miniaturki"></div>
+    </div>
     <div id="ramkaobrazu">
       <div id="gora">
       <button onclick="zdjecieZoomPlus()">Zoom<br>+</button>
