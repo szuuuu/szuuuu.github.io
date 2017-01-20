@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Astrowizja - Styczeń 2017</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="dane.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="lista"></div>
+    <div id="ramkaobrazu">
+      <div id="gora">
+      <button onclick="zdjecieZoomPlus()">Zoom<br>+</button>
+      <button onclick="zdjecieZoomMinus()">Zoom<br>-</button>
+      <button onclick="zdjecieZoomCale()">Całe<br>zdjęcie</button>
+      <button onclick="zdjecieZoom11()">Skala<br>1:1</button>
+      <span id="nazwa">&nbsp;</span>
+      </div>
+      <img id="obraz" src="">
+      <div id="wybierzcos">← Wybierz zdjęcie!</div>
+    </div>
+  </body>
+  <script type="text/javascript">
+  wypelnijListeZdjec();
+  </script>
+</html>

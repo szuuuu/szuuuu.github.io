@@ -1,0 +1,21 @@
+body {background-color:black;color:white;font-family:sans-serif;margin:0px;}
+a {color:yellow;text-decoration:none;text-shadow: 1px 3px 1px black;}
+a:visited {color:orange;}
+#lista {width: 20em;height: 100%;overflow-y:scroll;overflow-x:hidden;float:left;position: fixed; background-color:black;}
+#lista div {width:6em;float:left;position:relative;}
+#lista div.selected {width:6em;float:left;position:relative;background-color: yellow;}
+#lista div.selected img { }
+#lista img {width: 6em;}
+#lista span { position:absolute; width:5em; text-align:right; left:0.5em; top:0.5em; font-weight:bold;}
+#lista input {position:absolute;left:0.5em;top:3.5em;}
+#ramkaobrazu {margin-left: 20em;}
+#gora {position: fixed;background-color: rgba(0,0,0,0.3);border-radius: 0.5em;padding: 0.2em;border: solid 1px rgba(255,255,255,0.3);margin: 0.4em;}
+#gora button {font-size:1.2em;margin:0.2em;opacity:0.7;border-radius: 0.5em; background-color:#ccc; color:black;}
+#nazwa {font-size:3em;display: inline;text-shadow: 3px 3px 4px black;padding-left: 0.5em;padding-right: 0.5em;font-weight: bold;vertical-align: bottom;}
+#wybierzcos { font-size: 3em; font-weight: bold; padding-left: 1em; padding-top: 3em; }
+
+::-webkit-scrollbar {background-color:black;}
+::-webkit-scrollbar-track {background-color:#000; }
+::-webkit-scrollbar-thumb {background-color:#666; border-radius:1em; }
+::-webkit-scrollbar-button {background-color:#444; border-radius:1em; }
+::-webkit-scrollbar-corner {background-color:#000; }
