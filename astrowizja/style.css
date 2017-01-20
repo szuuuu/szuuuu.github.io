@@ -1,15 +1,16 @@
 body {background-color:black;color:white;font-family:sans-serif;margin:0px;overflow: auto;}
-a {color:yellow;text-decoration:none;text-shadow: 1px 3px 1px black;}
+a {color:#fd0;text-decoration:none;text-shadow: 1px 3px 1px black;}
 a:hover span {transform: scale(1.5);transform-origin: right;}
 #lista {width: 20em;height: 100%;overflow-y:scroll;overflow-x:hidden;float:left;position: fixed; background-color:black;}
 #lista .przyciski {padding: 0.5em;text-align: center;}
+#link {font-size:0.8em;}
 label {user-select:none;}
 #tytul {padding:0.5em;text-align: center;font-weight: bold;}
 #tytul a {text-decoration:underline;}
 #tytul a:hover {color:white;}
 #miniaturki {width:20em;}
 #miniaturki div {width:6em;float:left;position:relative;}
-#miniaturki div.selected {background-color: yellow;}
+#miniaturki div.selected {background-color: #fd0;}
 #miniaturki div.checked {background-color: #b50;}
 #miniaturki div.checked.selected {background-color: white;}
 #miniaturki div.hidden {display:none;}

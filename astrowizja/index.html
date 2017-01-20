@@ -10,7 +10,11 @@
   </head>
   <body>
     <div id="lista">
-    <div id="tytul"><a href="http://astropolis.pl/topic/57298-astrowizja-styczen-17-glosowanie-vox-populi/">Konkurs "Astrowizja" - Styczeń&nbsp;2017</a></div>
+    <div id="tytul"><a href="http://astropolis.pl/forum/268-konkurs-astrowizja/">Konkurs "Astrowizja"</a>
+    <br>
+    <select id="zbiory" onchange="zmienZbior()"></select>
+    <a id="link" href="">Link do głosowania</a>
+    </div>
     <div class="przyciski">
     <input id="ukryj_niewybrane" type="checkbox" onchange="ukryjNiewybrane(event)"><label for="ukryj_niewybrane">Ukryj niewybrane</label>
     </div>
@@ -29,6 +33,6 @@
     </div>
   </body>
   <script type="text/javascript">
-  wypelnijListeZdjec();
+  wypelnijListy();
   </script>
 </html>

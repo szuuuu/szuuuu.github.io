@@ -17,15 +17,14 @@ function klikZdjecia(event)
     var a=event.currentTarget;
     var href=a.href;
     var img=document.getElementById("obraz");
-    img.src=href;
+    img.src=href; img.style.display="";
     var nazwa=event.currentTarget.getElementsByTagName('span')[0].textContent;
     document.getElementById("nazwa").innerHTML=nazwa+"...";
     if (currently_selected) currently_selected.classList.remove("selected");
     currently_selected=a.parentElement;
     currently_selected.classList.add("selected");
     setTimeout(function(){wczytuje(nazwa);},500);
-    var info=document.getElementById("wybierzcos");
-    if (info) info.remove();
+    document.getElementById("wybierzcos").style.display="none";
     return false;
 }
 
@@ -38,16 +37,49 @@ function klikCheckbox(event)
 		ch.parentElement.classList.remove("checked");
 }
 
-function wypelnijListeZdjec()
+function wypelnijListy()
 {
-    lista=document.getElementById("miniaturki");
+wypelnijListeZbiorow(zdjecia);
+}
+
+function wypelnijListeZbiorow(dane)
+{
+var html="";
+var sel=document.getElementById("zbiory");
+for(var i=0;i<dane.length;i++)
+    {
+	var z=dane[i];
+	html+="<option>"+z[0][0]+"</option>";
+    }
+sel.innerHTML=html;
+sel.selectedIndex=dane.length-1;
+wypelnijListeZdjec(zdjecia[sel.selectedIndex]);
+}
+
+function zmienZbior()
+{
+var sel=document.getElementById("zbiory");
+var dane=zdjecia[sel.selectedIndex];
+wypelnijListeZdjec(dane);
+document.getElementById("link").href=dane[0][2];
+}
+
+function wypelnijListeZdjec(dane)
+{
+    var lista=document.getElementById("miniaturki");
+    var wysokosc=dane[0][1];
+    if (wysokosc!="") wysokosc=" style=\"height:"+wysokosc+";\"";
+    var zdjecia=dane[1];
     var html="";
     for(var i=0;i<zdjecia.length;i++)
     {
 	var z=zdjecia[i];
-	html+="<div><input type=\"checkbox\" onchange=\"klikCheckbox(event)\"><a href=\""+z[2]+"\" onclick=\"return klikZdjecia(event)\"><span>"+z[0]+"</span><img src=\""+z[1]+"\"></a></div>\n";
+	html+="<div"+wysokosc+"><input type=\"checkbox\" onchange=\"klikCheckbox(event)\"><a href=\""+z[2]+"\" onclick=\"return klikZdjecia(event)\"><span>"+z[0]+"</span><img src=\""+z[1]+"\"></a></div>\n";
     }
     lista.innerHTML=html;
+   	document.getElementById("obraz").src="";
+   	document.getElementById("obraz").style.display="none";
+    document.getElementById("wybierzcos").style.display="";
 }
 
 function zdjecieZoomCale()
