@@ -2,7 +2,7 @@ zdjecia =
 
 [
 
-[["Grudzień 2016","4.2em","http://astropolis.pl/topic/56812-astrowizja-grudzien-16-glosowanie-vox-populi/"],
+[["Grudzień 2016","66%","http://astropolis.pl/topic/56812-astrowizja-grudzien-16-glosowanie-vox-populi/"],
 [["1","http://astropolis.pl/uploads/post-21212-0-58006100-1482308641_thumb.jpg","http://astropolis.pl/uploads/post-21212-0-58006100-1482308641.jpg"],
 ["2","http://astropolis.pl/uploads/post-21212-0-66150200-1482308482_thumb.jpg","http://astropolis.pl/uploads/post-21212-0-66150200-1482308482.jpg"],
 ["3","http://astropolis.pl/uploads/post-21212-0-80929200-1482309337_thumb.jpg","http://astropolis.pl/uploads/post-21212-0-80929200-1482309337.jpg"],
@@ -43,7 +43,7 @@ zdjecia =
 ["38","http://astropolis.pl/uploads/post-21212-0-07172100-1482309099_thumb.jpg","http://astropolis.pl/uploads/post-21212-0-07172100-1482309099.jpg"]]
 ],
 
-[["Styczeń 2017","5em","http://astropolis.pl/topic/57298-astrowizja-styczen-17-glosowanie-vox-populi/"],
+[["Styczeń 2017","80%","http://astropolis.pl/topic/57298-astrowizja-styczen-17-glosowanie-vox-populi/"],
 [["1","http://astropolis.pl/uploads/post-21212-0-25848700-1484834195_thumb.jpg","http://astropolis.pl/uploads/post-21212-0-25848700-1484834195.jpg"],
 ["2","http://astropolis.pl/uploads/post-21212-0-34430700-1484834256_thumb.jpg","http://astropolis.pl/uploads/post-21212-0-34430700-1484834256.jpg"],
 ["3","http://astropolis.pl/uploads/post-21212-0-21182500-1484834154_thumb.jpg","http://astropolis.pl/uploads/post-21212-0-21182500-1484834154.jpg"],

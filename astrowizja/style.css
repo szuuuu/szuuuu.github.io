@@ -10,12 +10,15 @@ label {user-select:none;}
 #tytul a {text-decoration:underline;}
 #tytul a:hover {color:white;}
 #miniaturki {width:20em;}
-#miniaturki div {width:6em;float:left;position:relative;}
-#miniaturki div.selected {background-color: #fd0;}
-#miniaturki div.checked {background-color: #b50;}
-#miniaturki div.checked.selected {background-color: white;}
+#miniaturki div.outer {width:6em;float:left;position: relative;border: solid 1px transparent;}
+#miniaturki div.aspect {width:100%;}
+#miniaturki div.inner {position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+#miniaturki div.outer.selected {border: dashed 1px #fd0;}
+#miniaturki div.outer.checked {background-color: #b50;}
 #miniaturki div.hidden {display:none;}
-#miniaturki img {width: 6em;}
+#miniaturki.kolumny-2 div.outer {width:9em;}
+#miniaturki.kolumny-1 div.outer {margin-left:2em;width:15em;}
+#miniaturki img {width: 100%;}
 #miniaturki span {position:absolute;text-align:right;font-weight:bold;padding: 0.3em;left: 1.4em;}
 #miniaturki input {position:absolute;left: 0.2em;top: 0.4em;transform: scale(1.5);}
 #ramkaobrazu {margin-left: 20em;overflow: auto;height: 100%;}
