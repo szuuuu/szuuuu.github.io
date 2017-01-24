@@ -25,6 +25,7 @@ function klikZdjecia(event)
     currently_selected.classList.add("selected");
     setTimeout(function(){wczytuje(nazwa);},500);
     document.getElementById("wybierzcos").style.display="none";
+    document.getElementById("gora").style.display="block";
     return false;
 }
 
@@ -80,6 +81,7 @@ function wypelnijListeZdjec(dane)
    	document.getElementById("obraz").src="";
    	document.getElementById("obraz").style.display="none";
     document.getElementById("wybierzcos").style.display="";
+    document.getElementById("gora").style.display="none";
 }
 
 function zdjecieZoomCale()
@@ -118,4 +120,12 @@ function ukryjNiewybrane(event)
 			}
 		else
 	    	checks[i].parentElement.classList.remove("hidden");
+}
+
+function wybierzWszystkie(event)
+{
+    var checks=document.getElementById("miniaturki").getElementsByTagName('input');
+    for(var i=0;i<checks.length;i++)
+    	if (!checks[i].parentElement.classList.contains("hidden"))
+    		checks[i].checked=event.currentTarget.checked;
 }
