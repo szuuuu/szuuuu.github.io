@@ -1,7 +1,7 @@
 html {height:100%;}
 body {background-color:black;color:white;font-family:sans-serif;margin:0px;overflow: hidden;height: 100%;}
 a {color:#fd0;text-decoration:none;text-shadow: 1px 3px 1px black;}
-a:hover span {transform: scale(1.5);transform-origin: right;}
+a:hover span {background-color: #fd0;border-radius: 0.8em;color: black;text-shadow: none;}
 #lista {width: 20em;height: 100%;overflow-y:auto;overflow-x:hidden;float:left;position: fixed; background-color:black;}
 #lista .przyciski {padding: 0.5em;text-align: center;}
 #link {font-size:0.8em;}
@@ -16,10 +16,10 @@ label {user-select:none;}
 #miniaturki div.checked.selected {background-color: white;}
 #miniaturki div.hidden {display:none;}
 #miniaturki img {width: 6em;}
-#miniaturki span { position:absolute; width:5em; text-align:right; left:0.5em; top:0.5em; font-weight:bold;}
-#miniaturki input {position:absolute;left:0.5em;top:3.5em;transform: scale(1.5);}
+#miniaturki span {position:absolute;text-align:right;font-weight:bold;padding: 0.3em;left: 1.4em;}
+#miniaturki input {position:absolute;left: 0.2em;top: 0.4em;transform: scale(1.5);}
 #ramkaobrazu {margin-left: 20em;overflow: auto;height: 100%;}
-#gora {position: fixed;background-color: rgba(0,0,0,0.3);border-radius: 0.5em;padding: 0.2em;border: solid 1px rgba(255,255,255,0.3);margin: 0.4em;}
+#gora {position: fixed;background-color: rgba(0,0,0,0.3);border-radius: 0.5em;padding: 0.2em;border: solid 1px rgba(255,255,255,0.3);margin: 0.4em;display: none;}
 #gora button {font-size:1.2em;margin:0.2em;opacity:0.7;border-radius: 0.5em; background-color:#ccc; color:black;}
 #nazwa {font-size:3em;display: inline;text-shadow: 3px 3px 4px black;padding-left: 0.5em;padding-right: 0.5em;font-weight: bold;vertical-align: bottom;}
 #wybierzcos { font-size: 3em; font-weight: bold; padding-left: 1em; padding-top: 3em; }
